@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            background: #25ba2a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .output {
+            background: #efc4c489;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Базовый пример</h1>
+
+    <div>
+        <button onclick="showAlert()">Show alert</button>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="addComments()">Add comment</button>
+    </div>
+
+    <div class="output" id="output">
+
+    </div>
+
+    <script>
+        'use strict';
+
+        function displayOutput(text) {
+            const outputElem = document.getElementById('output');
+            outputElem.innerHTML += `<p>${text}</p>`;
+        }
+
+        function showAlert() {
+            alert("This is alert");
+            displayOutput('Alert OK');
+        }
+
+        function calculate() {
+            let a = 12;
+            let b = 34;
+
+            let sum = a + b;
+            let prod = a * b;
+
+            displayOutput(`Sum: ${a} + ${b} = ${sum}`);
+            displayOutput(`Prod: ${a} * ${b} = ${prod}`);
+        }
+
+        function addComments() {
+            displayOutput('// This is one line comment');
+            displayOutput('/* This is multiline comment */');
+        }
+
+        displayOutput('Welcome to my first awesome application');
+
+    </script>
+
+</body>
+</html>

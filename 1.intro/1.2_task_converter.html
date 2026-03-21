@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Конвертер температур</h1>
+
+    <script>
+        'use strict'
+
+        let cel = prompt('Введите температуру в градусах Цельсия');
+        
+        if (cel && !isNaN(cel)) {
+            let far = (parseFloat(cel) * 9 / 5) + 32;
+
+            alert(`${cel} C --> ${far} F`);
+        } else {
+            alert('Введите корректное число')
+        }
+    </script>
+
+</body>
+</html>
