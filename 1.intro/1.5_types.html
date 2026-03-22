@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Types</title>
+</head>
+<body>
+
+    <div class="container py-4">
+        <h1>String</h1>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                String
+            </div>
+            <div class="card-body">
+                <div id="output">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        'use strict';
+
+        const outputElem = document.getElementById('output');
+
+        // =========== Number ===========
+
+        // const integer = 34;
+        // const float = 34.56;
+        // const scient = 2.9987e3;
+        // const hex = 0xFF;
+        // const bin = 0b010101;
+        // const oct = 0o744;
+
+        // const inf = Infinity;
+        // const mInf = -Infinity;
+        // const nan = NaN;
+
+        // const maxSafeInteger = Number.MAX_SAFE_INTEGER;     // 2^53 - 1
+        // const minSafeInteger = Number.MIN_SAFE_INTEGER;     // -(2^53 - 1)
+        // const maxValue = Number.MAX_VALUE;
+        // const minValue = Number.MIN_VALUE;                  // 5e-324
+
+        // const num = 123.456;
+        // console.log('🟢', num.toFixed(2));
+        // console.log('🟢', num.toExponential(2));
+        // console.log('🟢', num.toPrecision(5));
+
+        // console.log('🟢', (0.1 + 0.2) === 0.3);
+
+
+
+        // ============== BigInt =============
+
+        // const big1 = 3749879345876438579827978364875928374982587692398472934727568346592837492658274982364865n;
+        // const big2 = BigInt('3749879345876438579827978364875928374982587692398472934727568346592837492658274982364865')
+
+        // const a = 2n ** 54n;
+        // const b = 100000000000000000000000000000000n;
+        // const sum = a + b;
+        // const mul = a * b;
+
+        // console.log('🟢', sum);
+        // console.log('🟢', mul);
+
+        // const big3 = BigInt(Number.MAX_SAFE_INTEGER) + 1n;
+
+        // const num = Number(big3);
+
+
+
+        // =================== String ===============
+
+        const str1 = 'common string';
+        const str1_1 = "common string";
+        const str2 = `Data ${str1}`;
+
+        const str3 = 'First line \n Second line';
+        const str4 = "\u{1F600}";
+        console.log('🟢', str4);
+
+        const str = 'Hello Vasia!';
+        console.log('🟢', str.length);
+        console.log('🟢', str.toUpperCase());
+        console.log('🟢', str.toLowerCase());
+        console.log('🟢', str.substring(0, 5));
+        console.log('🟢', str.replace('Vasia', 'World'));
+
+        console.log('🟢', str.indexOf('Vasia'));
+        console.log('🟢', str.includes('Vasia'));
+        console.log('🟢', str.startsWith('Vas'));
+
+
+        for (const char of str)
+            outputElem.innerHTML += `${char} `;
+
+    </script>
+
+</body>
+</html>
