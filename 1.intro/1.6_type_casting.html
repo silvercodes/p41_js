@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type casting</title>
+</head>
+<body>
+    
+    <script>
+        // ======== Type coercion ==========
+
+        // let num = Number('123');
+
+        // let result = '5' * 2;           // --> 5 * 2
+
+        
+        //================== to String =================
+
+        // console.log('🟢', String(12));                          // '12'
+        // console.log('🟢', String(-12.67));                      // '-12.67'
+        // console.log('🟢', String(null));                        // 'null'
+        // console.log('🟢', String(undefined));                   // 'undefined'
+        // console.log('🟢', String(true));                        // 'true'
+        // console.log('🟢', String(false));                       // 'false'
+        // console.log('🟢', String(NaN));                         // 'NaN'
+        // console.log('🟢', String(function() {console.log('test')}));    // function() {console.log('test')}
+        // console.log('🟢', String({}));                          // [object Object]
+        // console.log('🟢', String({id: 101}));                   // [object Object]
+        // console.log('🟢', String([]));                          // ''
+        // console.log('🟢', String([1, 2, 3]));                   // 1,2,3
+
+
+        // ================ to Number ==================
+
+        // console.log('🟢', Number('12'));                        // 12
+        // console.log('🟢', Number('-12.65'));                    // -12.65
+        // console.log('🟢', Number('  -12.65  '));                // -12.65
+        // console.log('🟢', Number('  -12.65x  '));               // NaN      !!!
+        // console.log('🟢', Number(''));                          // 0
+        // console.log('🟢', Number(null));                        // 0
+        // console.log('🟢', Number(undefined));                   // NaN      !!!
+        // console.log('🟢', Number(NaN));                         // NaN
+        // console.log('🟢', Number(true));                        // 1
+        // console.log('🟢', Number(false));                       // 0
+        // console.log('🟢', Number(function() {console.log('test')})); // NaN !!!
+        // console.log('🟢', Number({}));                          // NaN      !!!
+        // console.log('🟢', Number({id: 101}));                   // NaN      !!!
+        // console.log('🟢', Number([]));                          // 0        !!!
+        // console.log('🟢', Number([3]));                         // 3        !!!
+        // console.log('🟢', Number(['3']));                       // 3        !!!
+        // console.log('🟢', Number(['1', '2', '3']));             // NaN      !!!                 
+
+        // ===================== to Boolean =============
+
+        // FALSE:     false, 0, '', null, undefined, NaN
+
+        // console.log('🟢', Boolean('false'));                    // true
+
+
+
+        // ===============================================
+
+        console.log('🟢', 5 + '3');                 // '53'
+        console.log('🟢', 5 - '3');                 // 2
+        console.log('🟢', true + '3');              // 'true3'
+        console.log('🟢', true + 3);                // 4
+
+        
+
+
+
+    </script>
+</body>
+</html>
