@@ -61,14 +61,166 @@
 
         // ===============================================
 
-        console.log('🟢', 5 + '3');                 // '53'
-        console.log('🟢', 5 - '3');                 // 2
-        console.log('🟢', true + '3');              // 'true3'
-        console.log('🟢', true + 3);                // 4
+        // console.log('🟢', 5 + '3');                 // '53'
+        // console.log('🟢', 5 - '3');                 // 2
+        // console.log('🟢', true + '3');              // 'true3'
+        // console.log('🟢', true + 3);                // 4
+        // console.log('🟢', 5 + '-3');                // 5-3
+        // console.log('🟢', 5 + -3);                  // 2
+        // console.log('🟢', 5 + +'3');                // 8
 
+        // const ageString = '23';
+        // const age = +ageString;
+        // console.log('🟢', age);
         
+    </script>
+
+    <script>
+        // ============== Operators =============
+
+        // + - * / % ** +<unary> -<unary>
+
+        // += -= /=......
+
+        // =
+        // let a;
+        // console.log('🟢', a = 4);
+        // let b, c, d;
+        // b = c = d = 34;
+
+        // ++ --
+        // let a = 5;
+        // console.log('🟢', ++a);     // 6        a === 6
+        // console.log('🟢', a++);     // 6        a === 7
+
+        // let x = 5;
+        // console.log('🟢', x++ * 2);     // 10       x === 6
+        // console.log('🟢', ++x * 2);     // 14       x === 7
+
+        // let f = 5.7;
+        // console.log('🟢', ++f);         // 6.7
+
+        // let val = '5';
+        // console.log('🟢', ++val);       // 6
+
+        // let c;
+        // let b = (c = 3 + 4, 5 + 6);     // b === 11       c === 7
+        // console.log('🟢', b);
 
 
+
+        // > >= < <= == === != !==
+        
+        // let a = 0;
+        // let b = '0';
+        // console.log('🟢', a == b);          // true
+
+        // console.log('🟢', 12 == '12');      // true
+        // console.log('🟢', 12 === '12');     // false
+
+        // console.log('🟢', null == undefined);   // true
+        // console.log('🟢', null === undefined);  // false
+
+        // console.log('🟢', undefined == 0);      // false        !!!
+        // console.log('🟢', undefined < 0);       // false        !!!
+        // console.log('🟢', undefined > 0);       // false        !!!
+
+
+        // if (<condition>) {
+
+        // } else if {
+
+        // } else {
+
+        // }
+
+
+
+        // || && ! ??       ||= &&= ??=  (?? оператор нулевого слияния)
+        
+        // console.log('🟢', 1 || 0);      // true || 0    ----> 1
+
+        // let email = '';
+        // const correctEmail = email || 'no_email';
+        // console.log('🟢', correctEmail);
+
+        // console.log('🟢', undefined || null || 0);
+
+        // const email = '';
+        // const name = 'Vasia';
+        // const pass = '123123123';
+        // console.log('🟢', email || name || pass);
+
+
+        // const age = 20;
+        // age <= age || f()
+
+
+        // a ||= b      <EQUALS>        a || (a = b)
+        // let nickname = 'vasia';
+        // nickname ||= 'no_nickname';
+        // console.log('🟢', nickname);
+
+
+        // const email = '';
+        // const name = 'Vasia';
+        // const pass = '123123123';
+        // console.log('🟢', email && name && pass);
+
+
+        // a &&= b      <EQUALS>        a && (a = b)
+        // let name = 'Vasia';
+        // name &&= `User: ${name}`;
+        // console.log('🟢', name);
+
+
+        // console.log('🟢', !!34);
+
+
+        // const res = a ?? b   <EQUALS>    res = (a !== null && a !== undefined) ? a : b     
+
+        // let name = 'Vasia';
+        // // name = name ?? 'no_name';
+        // // console.log('🟢', name);
+        // name ??= 'no_name';
+        // console.log('🟢', name);
+
+
+
+        // ============== Cycles ==============
+
+        // while / do while     for         for/in      for/of
+        // for (let i = 0; i < 10; ++i) {
+        //     for (let j = 0; j < 10; ++j) {
+        //         if (i + j === 7)
+        //             break;
+        //     }
+        // }
+
+
+        // out: for (let i = 0; i < 10; ++i) {
+        //     for (let j = 0; j < 10; ++j) {
+        //         if (i + j === 7)
+        //             break out;
+        //     }
+        // }
+
+
+        // ============= Switch ==============
+
+        // let a = 2;
+        // switch (+a) {
+        //     case 1:
+                
+        //         break;
+        //     case 2:
+        //     case 3: 
+
+        //         break;
+        
+        //     default:
+        //         break;
+        // }
 
     </script>
 </body>
