@@ -1,6 +1,6 @@
 'use strict';
 
-//#region Function declaration
+//#region ========== Function declaration
 
 // function render() {
 //     console.log('🟢', 'test render');
@@ -99,23 +99,113 @@
 
 // ФУНКЦИЯ - ЭТО ОБЪЕКТ !!!
 
-const user = {
-    id: 101
-};
+// const user = {
+//     id: 101
+// };
 
-const render = function() {
-    console.log('🟢', 'test render');
-}
+// // render();
 
-render();
+// const render = function() {
+//     console.log('🟢', 'test render');
+// }
 
-
-
-
+// render();
 
 
+
+
+// f();
+// function f() {
+//     console.log('🟢', 'f');
+// }
+// const render = f;
+// render();
+
+
+
+
+
+// function validate(val, success, error) {
+//     if (val < 0)
+//         error();
+//     else
+//         success();
+// }
+
+// function successHandler() {
+//     console.log('🟢', 'SUCCESS');
+// }
+
+// function errorHandler() {
+//     console.log('🟢', 'ERROR');
+// }
+
+// // validate(-3, successHandler, errorHandler);
+
+// validate(
+//     -5, 
+//     function() {console.log('🟢', 'success');}, 
+//     function(){console.log('🟢', 'error');}
+// );
+
+
+
+
+
+// let f;
+// {
+//     f = function() {
+//         console.log('🟢', 'f');
+//     };
+// }
+// f();
 
 //#endregion
+
+
+
+
+
+// #region  Arrow function
+
+// let f = () => console.log('🟢', 'test');
+// f();
+
+// let g = (a, b) => {
+//     //
+//     //
+//     return a + b;
+// };
+// g(4, 5);
+
+// function validate(val, success, error) {
+//     if (val < 0)
+//         error();
+//     else
+//         success();
+// }
+
+// validate(
+//     -4,
+//     () => console.log('🟢', 'ok'),
+//     () => console.log('🟢', 'error')
+// );
+
+
+// #endregion
+
+// function creator(val) {
+//     return function() {
+//         console.log('🟢', ++val);
+//     }
+// }
+
+// const a = creator(10);
+// a();
+// a();
+// a();
+
+
 
 
 
