@@ -316,24 +316,71 @@
 
 
 
-const counter = {
-    count: 0,
-    add() {
-        this.count++;
+// const counter = {
+//     count: 0,
+//     add() {
+//         this.count++;
 
-        return this;
-    },
-    render() {
-        console.log('🟢', `count = ${this.count}`);
-    }
-}
+//         return this;
+//     },
+//     render() {
+//         console.log('🟢', `count = ${this.count}`);
+//     }
+// };
+
+
+// function Counter(initValue) {
+//     this.count = initValue;
+//     this.add = function() {
+//         this.count++;
+//         return this;
+//     };
+//     this.render = function() {
+//         console.log('🟢', `count = ${this.count}`);
+//     }
+// }
+
+// const counter1 = new Counter(0);
+// console.log('🟢', counter1);
+// counter1.add().add().add();
+// counter1.render();
+
+
+// const counter2 = new Counter(100);
+// console.log('🟢', counter2);
+// counter2.add().add().add();
+// counter2.render();
 
 
 
+
+
+// const user = {};
+
+// const email = user.email ?? 'no_email';
+// console.log('🟢', email);
+
+// user.email ??= 'no_email';
+// console.log('🟢', user);
+
+// console.log('🟢', user?.email);
+// console.log('🟢', user?.role);
+// console.log('🟢', user?.role?.title);
+
+
+
+// const user = {
+//     email: 'vasia@mail.com',
+//     render() {
+//         console.log('🟢', 'render');
+//     }
+// };
+
+// user.render?.();
+// user.show?.();
+
+// const key = 'email';
+// console.log('🟢', user?.[key]);
 
 
 //#endregion
-
-
-
-
